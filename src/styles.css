@@ -1,0 +1,40 @@
+.lp-pivot {
+  --lp-pivot-border: #b8c2ce;
+  --lp-pivot-accent: #1d4ed8;
+  font:
+    1rem/1.5 system-ui,
+    sans-serif;
+  color: #172033;
+}
+.lp-pivot-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+.lp-pivot-controls label {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.lp-pivot-scroll {
+  overflow: auto;
+}
+.lp-pivot table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.lp-pivot th,
+.lp-pivot td {
+  padding: 0.5rem;
+  border: 1px solid var(--lp-pivot-border);
+  text-align: start;
+}
+.lp-pivot tfoot {
+  font-weight: bold;
+  background: #f0f3f8;
+}
+.lp-pivot input:focus-visible {
+  outline: 2px solid var(--lp-pivot-accent);
+  outline-offset: 3px;
+}
